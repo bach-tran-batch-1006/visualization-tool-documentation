@@ -381,7 +381,7 @@ Talk about Jasmine and Protractor
 
 **Response:** Deletes a skill from the database with the ID provided by the user and returns the ID of the deleted skill upon success. If the ID is not found, it will return a 404 error and if the user provides an unparsable ID, it will return a 400 error. If the ID provided by the user is a skill that exists within a curriculum, it halts the deletion and returns a 400 error.
 
----
+
 ## `/category`
 **Verb:** GET
 
@@ -440,20 +440,55 @@ Talk about Jasmine and Protractor
 
 
 ## Models
-List the models for hibernate
+### Visualization
+**Attributes:** 
+* int visualizationId
+    - Database Column: "visualization_id"
+* String visualizationName
+    - Database Column: "visualization_name"
+* List\<Curriculum> curriculumList
+    - Join Table: "Visualizations_Curricula"
+### Curriculum
+* int curriculumId
+    - Database Column: "curriculum_id"
+* String curriculumName
+    - Database Column: "curriculum_name"
+* List\<Curriculum> curriculumList
+    - Join Table: "Curricula_Skills"
+### Skill
+* int skillId
+    - Database Column: "skill_id"
+* String skillName
+    - Database Column: "skill_name"
+* Category category
+    - Join Column: "category_id"
+### Category
+* int categoryId
+    - Database Column: "category_id"
+* String categoryName
+    - Database Column: "category_name"
+* String categoryDescription
+    - Database Column: "category_description"
+
 
 ## Controller Layer
-Talk about endpoint handling and logging
+See [endpoints](#Endpoints) for mappings.
+
+Each of the 4 models has their own controller layer that breaks up the endpoints listed by their names
 
 ## Service Layer
-Talk about general error checking
+Each of the 4 models has their own service layer would handle validating the inputs provided by the user, and threw exceptions if they were invalid.
+
+Service Layer includes business logic for CRUD operations for each of the models, as well as a few extra methods to query the Dao layer in order to recieve the unique skills by visualization, categories by visualization, and categories by curriculum.
 
 ## Dao Layer
+The Dao operations were handled through the use of Spring Data JPA. Objects were stored within the database through hibernate, and the ERD for the tables within the database is shown below.
 ![](Images/Project3ERD.PNG)
-Talk about Spring Data JPA
 
 ## Testing
-Talk about JUnit and Mockito
+Unit and integration testing was performed on the back end utilizing JUnit Jupiter and Mockito.
+Utilizing both, the project achieved 100% code coverage of the controller, service, and dao layers.
+Code coverage can be further explored via SonarCloud [here](https://sonarcloud.io/dashboard?id=bach-tran-batch-1006_visualization-tool-server)
 
 
 
