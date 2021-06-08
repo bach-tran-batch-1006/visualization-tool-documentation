@@ -32,10 +32,13 @@ The Curricula Visualization Tool is used, at a high-level, to provide a color-co
 
 ## Technologies Used
 - Spring Boot
+- Spring Data JPA
 - Hibernate
 - Angular
+- Bulma
 - Junit
-- Selenium
+- Mockito
+- Protractor
 - Maven
 - H2 database
 - Logback
@@ -48,7 +51,9 @@ The Curricula Visualization Tool is used, at a high-level, to provide a color-co
 # Front End Application
 
 ## View Page
-include screenshot maybe
+Representation of a Visualization object. Allows users to click on a curriculum and view a list of skills that the curriculum teaches. Skills are highlighted based on if the curriculum teaches that skill, and every skill is color coded based on the category.
+![](Images/Visualization-View-Page.png)
+
 
 ## Edit Pages
 
@@ -502,7 +507,7 @@ Service Layer includes business logic for CRUD operations for each of the models
 
 ## Dao Layer
 The Dao operations were handled through the use of Spring Data JPA. Objects were stored within the database through hibernate, and the ERD for the tables within the database is shown below.
-![](Images/Project3ERD.PNG)
+![](Images/Project3ERD.png)
 
 ## Back End Testing
 Unit and integration testing was performed on the back end utilizing JUnit Jupiter and Mockito.
