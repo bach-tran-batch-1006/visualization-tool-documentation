@@ -6,7 +6,7 @@
 
 ## Table of Contents
 * [Overview](#Overview)
-    - [Project Description](##Description)
+    - [Project Description](#Description)
 * [Front End Application](#Front-End-Application)
     - [View Page](#View-Page)
     - [Edit Pages](#Edit-Pages)
@@ -40,17 +40,19 @@ include screenshot maybe
 ## Edit Pages
 
 ### Edit Skills and Categories
-![](https://cdn.discordapp.com/attachments/841741779086344232/851834460440756304/unknown.png)
-Change this screenshot for one in a "screenshots" folder on the repository
+include screenshot here
 
 talk about each of the buttons on the page and their function
 
+
 ### Edit Curricula
 include screenshot here
+
 talk about each of the buttons on the page and their function
 
 ### Edit Visualizations
 include screenshot here
+
 talk about each of the buttons on the page and their function
 
 ## Testing
@@ -101,6 +103,7 @@ Talk about endpoint handling and logging
 Talk about general error checking
 
 ## Dao Layer
+![](Images/Project3ERD.PNG)
 Talk about Spring Data JPA
 
 ## Testing
