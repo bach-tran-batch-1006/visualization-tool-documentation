@@ -507,7 +507,7 @@ Service Layer includes business logic for CRUD operations for each of the models
 
 ## Dao Layer
 The Dao operations were handled through the use of Spring Data JPA. Objects were stored within the database through hibernate, and the ERD for the tables within the database is shown below.
-![](Images/Project3ERD.png)
+![](Images/Project3ERD_final.png)
 
 ## Back End Testing
 Unit and integration testing was performed on the back end utilizing JUnit Jupiter and Mockito.
