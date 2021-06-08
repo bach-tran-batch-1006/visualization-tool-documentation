@@ -11,6 +11,19 @@
     - [View Page](#View-Page)
     - [Edit Pages](#Edit-Pages)
         - [Edit Skills and Categories](#Edit-Skills-and-Categories)
+        - [Edit Curricula](#Edit-Curricula)
+        - [Edit Visualizations](#Edit-Visualizations)
+    - [Front End Testing](#Front-End-Testing)
+        - [Jasmine](#Jasmine)
+        - [Protractor](#Protractor)
+* [Back End API](#Back-End-API)
+    - [Sample Outputs](#Sample-Outputs)
+    - [Endpoints](#Endpoints)
+    - [Models](#Models)
+    - [Controller Layer](#Controller-Layer)
+    - [Service Layer](#Service-Layer)
+    - [Dao Layer](#Dao-Layer)
+    - [Back End Testing](#Back-End-Testing)
 
 # Overview
 
@@ -55,15 +68,18 @@ include screenshot here
 
 talk about each of the buttons on the page and their function
 
-## Testing
-Talk about Jasmine and Protractor
+## Front End Testing
+
+## Jasmine
+
+## Protractor
 
 
 
 ---
 # Back End API
 
-## Sample Output
+## Sample Outputs
 ### Visualization Object
 ```json
 {
@@ -449,6 +465,7 @@ Talk about Jasmine and Protractor
 * List\<Curriculum> curriculumList
     - Join Table: "Visualizations_Curricula"
 ### Curriculum
+**Attributes:** 
 * int curriculumId
     - Database Column: "curriculum_id"
 * String curriculumName
@@ -456,6 +473,7 @@ Talk about Jasmine and Protractor
 * List\<Curriculum> curriculumList
     - Join Table: "Curricula_Skills"
 ### Skill
+**Attributes:** 
 * int skillId
     - Database Column: "skill_id"
 * String skillName
@@ -463,6 +481,7 @@ Talk about Jasmine and Protractor
 * Category category
     - Join Column: "category_id"
 ### Category
+**Attributes:** 
 * int categoryId
     - Database Column: "category_id"
 * String categoryName
@@ -485,7 +504,7 @@ Service Layer includes business logic for CRUD operations for each of the models
 The Dao operations were handled through the use of Spring Data JPA. Objects were stored within the database through hibernate, and the ERD for the tables within the database is shown below.
 ![](Images/Project3ERD.PNG)
 
-## Testing
+## Back End Testing
 Unit and integration testing was performed on the back end utilizing JUnit Jupiter and Mockito.
 Utilizing both, the project achieved 100% code coverage of the controller, service, and dao layers.
 Code coverage can be further explored via SonarCloud [here](https://sonarcloud.io/dashboard?id=bach-tran-batch-1006_visualization-tool-server)
