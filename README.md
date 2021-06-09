@@ -76,10 +76,16 @@ Allows users to create, update, and delete visualizations. Each visualization co
 
 ## Front End Testing
 ### Jasmine
-Talk about Jasmine here __________________________________________ fix this
+The front end service files were tested through the use of Jasmine. Utilizing Jasmine, the project achieved _____% code coverage of the service layer.
+
+Code coverage can be further explored via SonarCloud [here](https://sonarcloud.io/dashboard?id=bach-tran-batch-1006_visualization-tool-client)
+
+
 
 ### Protractor
-Talk about Protractor here __________________________________________ fix this
+The front end was also tested utilizing Protractor. Protractor was able to simulate a user interacting with the various edit pages, it was able to test adding, updating, and deleting visualizations, curricula, skills, and categories by automatically selecting the elements on the page and filling data in the input fields.
+
+To run the tests, open git bash and run the command `ng e2e`.
 
 
 
