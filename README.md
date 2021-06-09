@@ -54,6 +54,8 @@ The Curricula Visualization Tool is used, at a high-level, to provide a color-co
 - Maven
 - H2 database
 - Logback
+- AWS EC2
+- AWS S3
 
 ## Features
 - Displays Curriculum in organized tabs
@@ -62,6 +64,9 @@ The Curricula Visualization Tool is used, at a high-level, to provide a color-co
 
 
 # Front End Application
+
+## Application Structure
+![](Images/FrontEndDiagram.png)
 
 ## View Page
 Representation of a Visualization object. Allows users to click on a curriculum and view a list of skills that the curriculum teaches. Skills are highlighted based on if the curriculum teaches that skill, and every skill is color coded based on the category.
@@ -107,7 +112,7 @@ To run the tests, open git bash and run the command: `ng e2e`.
 
 ## Sample Outputs
 ### Visualization Object
-```json
+```JSON
 {
     "visualizationId": 1,
     "visualizationName": "First Visualization",
