@@ -56,8 +56,9 @@ The Curricula Visualization Tool is used, at a high-level, to provide a color-co
 - Logback
 
 ## Features
-- Displays Curriculum in orgonized tabs
+- Displays Curriculum in organized tabs
 - Skills highlight if they were added to a certain curriculum
+- Allows for easy additions, deletion, and updates to all of the data
 
 
 # Front End Application
@@ -97,7 +98,7 @@ Code coverage can be further explored via SonarCloud [here](https://sonarcloud.i
 ### Protractor
 The front end was also tested utilizing Protractor. Protractor was able to simulate a user interacting with the various edit pages, it was able to test adding, updating, and deleting visualizations, curricula, skills, and categories by automatically selecting the elements on the page and filling data in the input fields.
 
-To run the tests, open git bash and run the command `ng e2e`.
+To run the tests, open git bash and run the command: `ng e2e`.
 
 
 
