@@ -77,7 +77,7 @@ Representation of a Visualization object. Allows users to click on a curriculum 
 ## Edit Pages
 
 ### Edit Skills and Categories
-Allows users to create, update, and delte skills and categories. Each skill requires a category to be linked to it, but a category can be created independently of the skills. The "add" and "update" buttons toggle their respective input fields in order to create a new object or to update an existing one. Back end is only called after clicking the "submit" or "save" buttons below the input fields. Clicking on a skill will also cause the update field to toggle on. The "remove" button deletes the currently selected skill from the database unless there is an issue with the deletion (like dependencies), in which case and error message is displayed to the user.
+Allows users to create, update, and delete skills and categories. Each skill requires a category to be linked to it, but a category can be created independently of the skills. The "add" and "update" buttons toggle their respective input fields in order to create a new object or to update an existing one. Back end is only called after clicking the "submit" or "save" buttons below the input fields. Clicking on a skill will also cause the update field to toggle on. The "remove" button deletes the currently selected skill from the database unless there is an issue with the deletion (like dependencies), in which case and error message is displayed to the user.
 
 ![](Images/skillCategoryEditPage.png)
 
