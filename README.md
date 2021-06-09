@@ -1,8 +1,15 @@
 # Curricula Visualization Tool
 
+
+
 [Go to Visualization Tool server code repo](https://github.com/bach-tran-batch-1006/visualization-tool-server)
 
+![build badge](https://github.com/bach-tran-batch-1006/visualization-tool-server/actions/workflows/sonar.yml/badge.svg)
+
 [Go to Visualization Tool client code repo](https://github.com/bach-tran-batch-1006/visualization-tool-client)
+
+![build badge](https://github.com/bach-tran-batch-1006/visualization-tool-client/actions/workflows/sonar.yml/badge.svg)
+
 
 ## Table of Contents
 * [Overview](#Overview)
