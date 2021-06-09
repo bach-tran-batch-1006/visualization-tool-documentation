@@ -71,7 +71,7 @@ The Curricula Visualization Tool is used, at a high-level, to provide a color-co
 ## View Page
 Representation of a Visualization object. Allows users to click on a curriculum and view a list of skills that the curriculum teaches. Skills are highlighted based on if the curriculum teaches that skill, and every skill is color coded based on the category.
 
-![](Images/Visualization-View-Page.png)
+![](Images/Visualization-View-PageFinal.png)
 
 
 ## Edit Pages
@@ -79,18 +79,18 @@ Representation of a Visualization object. Allows users to click on a curriculum 
 ### Edit Skills and Categories
 Allows users to create, update, and delete skills and categories. Each skill requires a category to be linked to it, but a category can be created independently of the skills. The "add" and "update" buttons toggle their respective input fields in order to create a new object or to update an existing one. Back end is only called after clicking the "submit" or "save" buttons below the input fields. Clicking on a skill will also cause the update field to toggle on. The "remove" button deletes the currently selected skill from the database unless there is an issue with the deletion (like dependencies), in which case and error message is displayed to the user.
 
-![](Images/skillCategoryEditPage.png)
+![](Images/skillCategoryEditPageFinal.png)
 
 
 ### Edit Curricula
 Allows users to create, update, and delete curricula. Each curricula contains a list of skills that can be taught by a specific curriculum. Users can pick a curriculum from the left side and update what skills are taught by that curriculum by selecting skills from the checklist on the right and clicking the update button. Add and Remove function identically to skills and categories.
 
-![](Images/curriculaEditPage.png)
+![](Images/curriculaEditPageFinal.png)
 
 ### Edit Visualizations
 Allows users to create, update, and delete visualizations. Each visualization contains a list of curricula to be shown to Revature clients. Users can pick a visualization from the left side and update what curricula from the checklist on the right should be shown on the visualization view page by clicking the update button. Add and Remove function identically to skills and categories.
 
-![](Images/visualizationEditPage.png)
+![](Images/visualizationEditPageFinal.png)
 
 ## Front End Testing
 ### Jasmine
