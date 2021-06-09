@@ -6,9 +6,14 @@
 
 ![build badge](https://github.com/bach-tran-batch-1006/visualization-tool-server/actions/workflows/sonar.yml/badge.svg)
 
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=bach-tran-batch-1006_visualization-tool-server&metric=coverage)](https://sonarcloud.io/dashboard?id=bach-tran-batch-1006_visualization-tool-server)
+
+
 [Go to Visualization Tool client code repo](https://github.com/bach-tran-batch-1006/visualization-tool-client)
 
 ![build badge](https://github.com/bach-tran-batch-1006/visualization-tool-client/actions/workflows/sonar.yml/badge.svg)
+
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=bach-tran-batch-1006_visualization-tool-client&metric=coverage)](https://sonarcloud.io/dashboard?id=bach-tran-batch-1006_visualization-tool-client)
 
 
 ## Table of Contents
