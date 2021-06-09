@@ -180,7 +180,7 @@ To run the tests, open git bash and run the command `ng e2e`.
 **Status Codes:**
 - 200: OK
 
-**Response:** Array of all visualization objects stored in the database. If the database is empty, it just returns an empty array.
+**Response:** Array of all [visualization objects](#Visualization-object) stored in the database. If the database is empty, it just returns an empty array.
 
 
 
@@ -194,7 +194,7 @@ To run the tests, open git bash and run the command `ng e2e`.
 - 400: Non-integer/Empty ID
 - 404: No visualization found for given ID
 
-**Response:** Returns a visualization object specified by the ID. If the ID is not found, it will return a 404 error and if the user provides an unparsable ID, it will return a 400 error.
+**Response:** Returns a [visualization object](#Visualization-object) specified by the ID. If the ID is not found, it will return a 404 error and if the user provides an unparsable ID, it will return a 400 error.
 
 
 
@@ -209,7 +209,7 @@ To run the tests, open git bash and run the command `ng e2e`.
 - 200: OK
 - 400: Empty Name given for the new visualization
 
-**Response:** Adds a new visualization object to the database and returns the created visualization. If the user sends information to create the new visualization but leaves the name blank, it will return a 400 error.
+**Response:** Adds a new [visualization object](#Visualization-object) to the database and returns the created visualization. If the user sends information to create the new visualization but leaves the name blank, it will return a 400 error.
 
 
 
@@ -225,7 +225,7 @@ To run the tests, open git bash and run the command `ng e2e`.
 - 400: Non-integer/Empty ID, Empty Name given for the updated visualization
 - 404: No visualization found for given ID
 
-**Response:** Updates a visualization object already stored in the database and returns the updated visualization. If the user sends information to update the visualization but leaves the name blank, it will return a 400 error. If the ID is not found, it will return a 404 error and if the user provides an unparsable ID, it will return a 400 error.
+**Response:** Updates a visualization object already stored in the database and returns the updated [visualization object](#Visualization-object). If the user sends information to update the visualization but leaves the name blank, it will return a 400 error. If the ID is not found, it will return a 404 error and if the user provides an unparsable ID, it will return a 400 error.
 
 
 
@@ -253,7 +253,7 @@ To run the tests, open git bash and run the command `ng e2e`.
 - 400: Non-integer/Empty ID
 - 404: No visualization found for given ID
 
-**Response:** Returns list of all the unique skills held by the visualization specified by the ID provided by the user. If the ID is not found, it will return a 404 error and if the user provides an unparsable ID, it will return a 400 error.
+**Response:** Returns list of all the unique [skills](#Skill-Object) held by the visualization specified by the ID provided by the user. If the ID is not found, it will return a 404 error and if the user provides an unparsable ID, it will return a 400 error.
 
 
 
@@ -267,7 +267,7 @@ To run the tests, open git bash and run the command `ng e2e`.
 - 400: Non-integer/Empty ID
 - 404: No visualization found for given ID
 
-**Response:** Returns list of all the unique categories held by the visualization specified by the ID provided by the user. If the ID is not found, it will return a 404 error and if the user provides an unparsable ID, it will return a 400 error.
+**Response:** Returns list of all the unique [category objects](#Category-Object) held by the visualization specified by the ID provided by the user. If the ID is not found, it will return a 404 error and if the user provides an unparsable ID, it will return a 400 error.
 
 
 ## `/curriculum`
@@ -278,7 +278,7 @@ To run the tests, open git bash and run the command `ng e2e`.
 **Status Codes:**
 - 200: OK
 
-**Response:** Array of all curriculum objects stored in the database. If the database is empty, it just returns an empty array.
+**Response:** Array of all [curriculum objects](#Curriculum-Object) stored in the database. If the database is empty, it just returns an empty array.
 
 
 
@@ -292,7 +292,7 @@ To run the tests, open git bash and run the command `ng e2e`.
 - 400: Non-integer/Empty ID
 - 404: No curriculum found for given ID
 
-**Response:** Returns a curriculum object specified by the ID. If the ID is not found, it will return a 404 error and if the user provides an unparsable ID, it will return a 400 error.
+**Response:** Returns a [curriculum object](#Curriculum-Object) specified by the ID. If the ID is not found, it will return a 404 error and if the user provides an unparsable ID, it will return a 400 error.
 
 
 
@@ -307,7 +307,7 @@ To run the tests, open git bash and run the command `ng e2e`.
 - 200: OK
 - 400: Empty Name given for the new curriculum
 
-**Response:** Adds a new curriculum object to the database and returns the created curriculum. If the user sends information to create the new curriculum but leaves the name blank, it will return a 400 error.
+**Response:** Adds a new curriculum object to the database and returns the created [curriculum object](#Curriculum-Object). If the user sends information to create the new curriculum but leaves the name blank, it will return a 400 error.
 
 
 
@@ -323,7 +323,7 @@ To run the tests, open git bash and run the command `ng e2e`.
 - 400: Non-integer/Empty ID, Empty Name given for the updated curriculum
 - 404: No curriculum found for given ID
 
-**Response:** Updates a curriculum object already stored in the database and returns the updated curriculum. If the user sends information to update the curriculum but leaves the name blank, it will return a 400 error. If the ID is not found, it will return a 404 error and if the user provides an unparsable ID, it will return a 400 error.
+**Response:** Updates a [curriculum object](#Curriculum-Object) already stored in the database and returns the updated curriculum. If the user sends information to update the curriculum but leaves the name blank, it will return a 400 error. If the ID is not found, it will return a 404 error and if the user provides an unparsable ID, it will return a 400 error.
 
 
 
@@ -351,7 +351,7 @@ To run the tests, open git bash and run the command `ng e2e`.
 - 400: Non-integer/Empty ID
 - 404: No curriculum found for given ID
 
-**Response:** Returns list of all the unique categories held by the curriculum specified by the ID provided by the user. If the ID is not found, it will return a 404 error and if the user provides an unparsable ID, it will return a 400 error.
+**Response:** Returns list of all the unique [category objects](#Category-Object) held by the curriculum specified by the ID provided by the user. If the ID is not found, it will return a 404 error and if the user provides an unparsable ID, it will return a 400 error.
 
 
 ## `/skill`
@@ -362,7 +362,7 @@ To run the tests, open git bash and run the command `ng e2e`.
 **Status Codes:**
 - 200: OK
 
-**Response:** Array of all skill objects stored in the database. If the database is empty, it just returns an empty array.
+**Response:** Array of all [skill objects](#Skill-Object) stored in the database. If the database is empty, it just returns an empty array.
 
 
 
@@ -376,7 +376,7 @@ To run the tests, open git bash and run the command `ng e2e`.
 - 400: Non-integer/Empty ID
 - 404: No skill found for given ID
 
-**Response:** Returns a skill object specified by the ID. If the ID is not found, it will return a 404 error and if the user provides an unparsable ID, it will return a 400 error.
+**Response:** Returns a [skill object](#Skill-Object) specified by the ID. If the ID is not found, it will return a 404 error and if the user provides an unparsable ID, it will return a 400 error.
 
 
 
@@ -391,7 +391,7 @@ To run the tests, open git bash and run the command `ng e2e`.
 - 200: OK
 - 400: Empty Name given for the new skill
 
-**Response:** Adds a new skill object to the database and returns the created skill. If the user sends information to create the new skill but leaves the name blank, it will return a 400 error.
+**Response:** Adds a new skill object to the database and returns the created [skill object](#Skill-Object). If the user sends information to create the new skill but leaves the name blank, it will return a 400 error.
 
 
 
@@ -407,7 +407,7 @@ To run the tests, open git bash and run the command `ng e2e`.
 - 400: Non-integer/Empty ID, Empty Name given for the updated skill
 - 404: No skill found for given ID
 
-**Response:** Updates a skill object already stored in the database and returns the updated skill. If the user sends information to update the skill but leaves the name blank, it will return a 400 error. If the ID is not found, it will return a 404 error and if the user provides an unparsable ID, it will return a 400 error.
+**Response:** Updates a skill object already stored in the database and returns the updated [skill object](#Skill-Object). If the user sends information to update the skill but leaves the name blank, it will return a 400 error. If the ID is not found, it will return a 404 error and if the user provides an unparsable ID, it will return a 400 error.
 
 
 ## `/skill/{id}`
@@ -431,7 +431,7 @@ To run the tests, open git bash and run the command `ng e2e`.
 **Status Codes:**
 - 200: OK
 
-**Response:** Array of all category objects stored in the database. If the database is empty, it just returns an empty array.
+**Response:** Array of all [category objects](#Category-Object) stored in the database. If the database is empty, it just returns an empty array.
 
 
 
@@ -446,7 +446,7 @@ To run the tests, open git bash and run the command `ng e2e`.
 - 200: OK
 - 400: Empty Name given for the new category
 
-**Response:** Adds a new category object to the database and returns the created category. If the user sends information to create the new category but leaves the name blank, it will return a 400 error.
+**Response:** Adds a new [category object](#Category-Object) to the database and returns the created category. If the user sends information to create the new category but leaves the name blank, it will return a 400 error.
 
 
 
@@ -462,7 +462,7 @@ To run the tests, open git bash and run the command `ng e2e`.
 - 400: Non-integer/Empty ID, Empty Name given for the updated category
 - 404: No category found for given ID
 
-**Response:** Updates a category object already stored in the database and returns the updated category. If the user sends information to update the category but leaves the name blank, it will return a 400 error. If the ID is not found, it will return a 404 error and if the user provides an unparsable ID, it will return a 400 error.
+**Response:** Updates a category object already stored in the database and returns the updated [category object](#Category-Object). If the user sends information to update the category but leaves the name blank, it will return a 400 error. If the ID is not found, it will return a 404 error and if the user provides an unparsable ID, it will return a 400 error.
 
 
 
